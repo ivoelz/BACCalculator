@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BAC Calculator</title>
+    <script src="code.js"></script>
+    <style>
+        .output {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>BAC Calculator</h1>
+
+    <fieldset>
+        <label for="beer">How many beers have you consumed?</label>
+        <input type="number" id="beer">
+        <br>
+
+        <label for="wine">How many glasses of wine have you consumed?</label>
+        <input type="number" id="wine">
+        <br>
+
+        <label for="shots">How many shots have you consumed?</label>
+        <input type="number" id="shots">
+        <br>
+
+        <label for="weight">How much do you weigh(in pounds)?</label>
+        <input type="number" id="weight">
+        <br>
+
+        <label for="time">How many hours has it been since your first drink?</label>
+        <input type="number" id="time">
+        <br>
+    </fieldset>
+
+    <br>
+
+    <button id="bacButton">Calculate Blood Alcohol Content</button>
+
+    <p class="output">Your Blood Alcohol Content is <span id="bacTotal"></span>%</p>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>
